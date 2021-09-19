@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IsaCV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__body">
+            <img class="header__img" src="./images/face.jpg" alt="avatar" />
+            <h1 class="title header__title">Isa Agverdev</h1>
+          </div>
+          <aside class="header__aside">
+            <div class="contacts__inner">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a href="https://t.me/isamo_a" class="contacts__link">
+                    <img src="./images/social/tg.svg" alt="telegram" class="contacts__img" />
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="https://vk.com/aisamveroirgoibrob" class="contacts__link">
+                    <img src="./images/social/vk.svg" alt="vkontakte" class="contacts__img" />
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    href="https://www.linkedin.com/in/isa-agverdiev-038862212/"
+                    class="contacts__link"
+                  >
+                    <img src="./images/social/linkedin.svg" alt="linkedin" class="contacts__img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <h2 class="title title__h2 about__title">About me</h2>
+          <div class="text__wrap">
+            <p class="text">
+              I am Isa Agverdiev, a web developer, have been working in the field of frontend
+              development for about 6 months
+            </p>
+            <p class="text">
+              He started his way with courses on HTML, CSS. Now I am actively studying JavaScript &
+              React. <i>My main goal for the near future is to get a job in epam</i>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h2 class="title title__h2">Skills</h2>
+          <div class="skills__lists">
+            <ul class="skills__list">
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">Sass/Less</li>
+              <li class="skills__item">JavaScript</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">React.js</li>
+              <li class="skills__item">git</li>
+              <li class="skills__item">Gulp</li>
+              <li class="skills__item">Webpack</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="code">
+        <div class="container">
+          <h2 class="title title__h2">Sample code</h2>
+          <div class="code__wrap">
+            <pre><code class="language-js">
+              var WordDictionary = function () {
+                this.arr = []
+              };
+              WordDictionary.prototype.addWord = function (word) {
+                this.arr.push(word)
+              };
+              WordDictionary.prototype.search = function (word) {
+                 let reg = new RegExp(`^${word}$`)
+                 return this.arr.find(v => reg.test(v)) !== undefined
+              };
+            </code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="experience">
+        <div class="container">
+          <h2 class="title title__h2">Work experience</h2>
+          <div class="text__wrap">
+            <p class="text">
+              I created designs and did site layout, used ready-made js libraries, and also wrote my
+              own scripts. Below is an example of my work
+            </p>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__item">
+              <a href="https://isaagverdiev.github.io/ResumeWebsite/" class="experience__link"
+                >CV website
+              </a>
+            </li>
+            <li class="experience__item">
+              <a href="https://isaagverdiev.github.io/PureBank/" class="experience__link"
+                >PureBank</a
+              >
+            </li>
+            <li class="experience__item">
+              <a href="https://isaagverdiev.github.io/Shirogo/" class="experience__link">Shirogo</a>
+            </li>
+            <li class="experience__item">
+              <a href="https://isaagverdiev.github.io/MyOffice/" class="experience__link"
+                >MyOffice</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item footer__item-gh">
+              <a href="https://github.com/IsaAgverdiev" class="footer__link"
+                ><img class="footer__img-gh" src="./images/github.svg" alt=""
+              /></a>
+            </li>
+            <li class="footer__item"><p class="footer__text">2021</p></li>
+            <li class="footer__item footer__item-rs">
+              <a href="https://rs.school/js/" class="footer__link footer__link-rs"
+                ><img class="footer__img-rs" src="./images/logo-rs.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
