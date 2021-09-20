@@ -281,6 +281,12 @@ button {
   transition: 0.3s;
 }
 
+.contacts__line {
+  width: 2px;
+  height: 100%;
+  background-color: red;
+}
+
 .about__text-wrap {
   width: 80%;
   margin: 0 auto;
@@ -463,6 +469,7 @@ button {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
+  margin-bottom: 40px;
 }
 
 .projects__item {
@@ -505,6 +512,7 @@ button {
 }
 
 .projects .project__link-more {
+  font-family: 'JetBrains Mono', monospace;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,8 +534,8 @@ button {
 .projects__item-more {
   border: 1px solid #e7ce56;
   background-color: #e7ce56;
-  overflow: hidden;
   padding: 0;
+  padding: 30px 40px;
 }
 
 .projects__item-more .project__inner {
@@ -543,7 +551,8 @@ button {
 }
 
 .footer {
-  background-color: #c0c5ce;
+  background-color: #b45ea4;
+  background-color: #525458;
 }
 
 .footer__inner {
@@ -602,12 +611,13 @@ button {
   position: relative;
   padding: 20px;
   background-color: #1c1d21;
+  border: 1px solid #e7ce56;
+  border: 1px solid #fff;
   margin: 30px auto;
   width: 50%;
   color: #fff;
   overflow: auto;
   z-index: 8;
-  overflow-y: hidden;
 }
 
 .project-modal__title {
@@ -743,6 +753,9 @@ button {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     background-color: #1c1d21;
+    border-left: 2px solid #e7ce56;
+    border-bottom: 2px solid #e7ce56;
+    overflow-y: auto;
   }
   .header__menu.hide-menu {
     -webkit-transform: translateY(0%);
@@ -758,7 +771,12 @@ button {
     text-align: left;
   }
   .header__item {
+    width: 100%;
+    text-align: center;
     padding: 13px 10px;
+  }
+  .header__item:hover {
+    border-bottom: 1px solid transparent;
   }
   .header__item + .header__item {
     margin-left: 0px;

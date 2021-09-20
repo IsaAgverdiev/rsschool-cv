@@ -241,6 +241,11 @@ button {
       }
     }
   }
+  &__line {
+    width: 2px;
+    height: 100%;
+    background-color: red;
+  }
 }
 
 .about {
@@ -370,7 +375,6 @@ button {
 
   &__item {
     display: grid;
-    // border: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding: 15px 10px;
     grid-gap: 40px;
@@ -404,6 +408,7 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 30px;
+    margin-bottom: 40px;
   }
 
   &__item {
@@ -434,6 +439,8 @@ button {
     }
 
     &__link-more {
+      font-family: 'JetBrains Mono', monospace;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -452,8 +459,8 @@ button {
   &__item-more {
     border: 1px solid #e7ce56;
     background-color: #e7ce56;
-    overflow: hidden;
     padding: 0;
+    padding: 30px 40px;
     .project__inner {
       display: flex;
       align-items: center;
@@ -465,7 +472,9 @@ button {
 }
 
 .footer {
-  background-color: #c0c5ce;
+  // background-color: #1c1d21;
+  background-color: #b45ea4;
+  background-color: #525458;
   &__inner {
     padding: 30px 0 30px;
   }
@@ -519,12 +528,13 @@ button {
     position: relative;
     padding: 20px;
     background-color: #1c1d21;
+    border: 1px solid #e7ce56;
+    border: 1px solid #fff;
     margin: 30px auto;
     width: 50%;
     color: #fff;
     overflow: auto;
     z-index: 8;
-    overflow-y: hidden;
   }
 
   &__title {
@@ -668,6 +678,9 @@ button {
       padding: 100px 15px 30px;
       transform: translateY(-100%);
       background-color: #1c1d21;
+      border-left: 2px solid #e7ce56;
+      border-bottom: 2px solid #e7ce56;
+      overflow-y: auto;
     }
 
     &__menu.hide-menu {
@@ -679,7 +692,12 @@ button {
       text-align: left;
     }
     &__item {
+      width: 100%;
+      text-align: center;
       padding: 13px 10px;
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
     }
     &__item + &__item {
       margin-left: 0px;

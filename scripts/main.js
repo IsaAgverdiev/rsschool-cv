@@ -10,19 +10,9 @@ function disableScroll() {
   const widthScroll = window.innerWidth - document.body.offsetWidth;
 
   document.body.dbScrollY = window.scrollY;
-
-  document.body.style.cssText = `
-    position: fixed;
-    top: ${-window.scrollY}px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    padding-right: ${widthScroll}px
-  `;
 }
+
 function enableScroll() {
-  document.body.style.cssText = ``;
   window.scroll({ top: document.body.dbScrollY });
 }
 
@@ -99,7 +89,7 @@ const projects = {
     ],
     status: 'comlited',
   },
-  KoreaCrem: {
+  React: {
     title: 'React',
     URL: 'isaagverdiev.github.io/react-fund/',
     repositories: 'https://github.com/IsaAgverdiev/react-fund',
@@ -164,8 +154,8 @@ function getModal(e) {
       createModal('Desire');
       openModal();
       break;
-    case 'KoreaCrem':
-      createModal('KoreaCrem');
+    case 'React':
+      createModal('React');
       openModal();
       break;
   }
@@ -214,24 +204,31 @@ mainProjects.forEach(i => {
   });
 });
 
-
 let openMenuBtn = document.querySelector('.btn-burger');
 let overlayMenu = document.querySelector('.overlay-menu');
 let menu = document.querySelector('.header__menu');
 let body = document.body;
 
-openMenuBtn.addEventListener('mousedown', showRightMenu);
+openMenuBtn.addEventListener('click', showRightMenu);
 
 if (document.documentElement.clientWidth > 767) {
   enableScroll();
 }
 
 function showRightMenu() {
-  disableScroll();
+  let = headerItem = document.querySelectorAll('.header__item');
+  enableScroll();
   openMenuBtn.classList.toggle('btn-burger--clouse');
   menu.classList.toggle('hide-menu');
-  overlayMenu.classList.toggle('hide');
-  if (overlayMenu.classList.contains('hide')) {
-    enableScroll();
+
+  if (openMenuBtn.classList.contains('btn-burger--clouse')) {
+    disableScroll();
+  }
+  for (let i = 0; i < headerItem.length; i++) {
+    headerItem[i].addEventListener('click', () => {
+      openMenuBtn.classList.toggle('btn-burger--clouse');
+      menu.classList.toggle('hide-menu');
+      enableScroll();
+    });
   }
 }
