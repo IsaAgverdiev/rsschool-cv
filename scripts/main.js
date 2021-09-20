@@ -226,8 +226,8 @@ function showRightMenu() {
   }
   for (let i = 0; i < headerItem.length; i++) {
     headerItem[i].addEventListener('click', () => {
-      openMenuBtn.classList.toggle('btn-burger--clouse');
-      menu.classList.toggle('hide-menu');
+      openMenuBtn.classList.remove('btn-burger--clouse');
+      menu.classList.remove('hide-menu');
       enableScroll();
     });
   }
