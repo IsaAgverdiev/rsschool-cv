@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script defer src="./scripts/main.js"></script>
+
+    <title>IsaCV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <span class="header__logo-text">&lt;AGVDV&gt;</span>
+          </div>
+          <div class="header__menu">
+            <ul class="header__list">
+              <li class="header__item"><a href="#about" class="header__link">About</a></li>
+              <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+              <li class="header__item"><a href="#code" class="header__link">Code</a></li>
+              <li class="header__item"><a href="#education" class="header__link">Education</a></li>
+              <li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn-burger" id="js-burger-btn">
+            <span class="btn-burger__line"></span>
+            <span class="btn-burger__line"></span>
+            <span class="btn-burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contacts">
+        <div class="container">
+          <div class="contacts__inner-left">
+            <div class="contacts__body">
+              <img class="contacts__img" src="./images/face.jpg" alt="avatar" />
+              <aside class="contacts__aside">
+                <div class="contacts__inner-right">
+                  <h1 class="title contacts__title-name">Isa Agverdev</h1>
+                  <span class="title contacts__title-job">Frontend developer</span>
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a target="_blank" href="https://t.me/isamo_a" class="contacts__link">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 242.67 242.67"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M162.44 86.06 108.4 136.3a11.2 11.2 0 0 0-3.47 6.7l-1.84 13.64c-.25 1.82-2.8 2-3.31.24L92.7 132a6.6 6.6 0 0 1 2.88-7.42l65.49-40.33c1.17-.72 2.38.87 1.37 1.81zM242.67 0v242.67H0V0h242.67zm-54 58.3L51.16 111.35a3.95 3.95 0 0 0 .04 7.38l33.5 12.51 12.97 41.7a3.95 3.95 0 0 0 6.27 1.9l18.67-15.23a5.57 5.57 0 0 1 6.8-.19l33.68 24.46a3.95 3.95 0 0 0 6.19-2.4l24.67-118.7a3.95 3.95 0 0 0-5.28-4.48z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a target="_blank" href="https://vk.com/isamo85" class="contacts__link">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 455.73 455.73"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0 0v455.73h455.73V0H0zm365.34 252.87c11 11.35 22.77 21.96 33.42 33.6a198.12 198.12 0 0 1 21.03 27.36c7.75 12.25 2.96 23.78-11.53 25.84-9.11 1.28-53.64 0-55.94 0-11.97-.06-22.46-4.21-30.91-12.34-9.4-9.05-17.94-18.98-26.97-28.42a75.33 75.33 0 0 0-8.75-7.96c-7.38-5.63-14.62-4.38-18.07 4.29-2.95 7.44-5.5 27-5.61 28.67-.62 8.73-6.18 14.3-15.96 14.83-28.24 1.54-55.6-1.61-81.1-15.27-21.6-11.57-38.86-27.93-53.8-47-23.75-30.31-42.5-63.62-59.62-97.91-.88-1.76-18.22-38.66-18.69-40.4-1.54-5.84-.1-11.41 4.83-13.33 3.08-1.2 60.25 0 61.2.05 9.12.5 15.35 4.34 19.19 13.81 10.92 26.97 24.76 52.4 43 75.23a40.13 40.13 0 0 0 8.67 7.94c4.69 3.22 9.11 2.09 11.02-3.28 2.02-5.63 3.87-17.04 3.98-22.95.3-15.45-.05-25.57-.88-41-.53-9.88-4.05-18.56-18.58-21.18-4.5-.81-4.9-4.5-2.02-8.2 6-7.67 14.36-8.89 23.43-9.37 14.7-.8 29.46-.15 44.18 0 6 .05 12.02.54 17.93 1.82 7.7 1.68 11.82 7.08 13.09 14.6.66 3.88 1 7.87.9 11.8-.38 16.85-1.2 33.7-1.38 50.56-.09 6.61.4 13.4 1.81 19.84 1.98 8.97 8.1 11.23 14.35 4.74 7.93-8.24 14.93-17.5 21.5-26.93 11.94-17.12 20.85-35.92 28.52-55.3 3.97-10 7.01-12.17 17.77-12.2 20.22-.04 40.44-.06 60.66 0 3.59.02 7.34.36 10.72 1.43 5.5 1.76 7.67 6.24 6.39 11.92-3 13.32-10.2 24.65-17.91 35.53-12.38 17.47-25.34 34.51-38 51.77a65.03 65.03 0 0 0-4.37 6.93c-4.73 8.56-4.4 13.36 2.5 20.48z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/isa-agverdiev-038862212/"
+                        class="contacts__link"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 455 455"
+                          xml:space="preserve"
+                        >
+                          <g fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M246.4 204.35v-.67c-.14.23-.32.45-.44.67h.44z" />
+                            <path
+                              d="M0 0v455h455V0H0zm141.52 378h-67.5V174.9h67.5V378zM107.77 147.2h-.45c-22.64 0-37.32-15.6-37.32-35.1 0-19.93 15.1-35.1 38.21-35.1s37.31 15.17 37.75 35.1c0 19.5-14.64 35.1-38.2 35.1zM385 378h-67.52V269.35c0-27.3-9.76-45.92-34.2-45.92-18.66 0-29.75 12.54-34.64 24.69-1.78 4.34-2.24 10.37-2.24 16.46V378h-67.54s.9-184.04 0-203.1h67.54v28.79c8.97-13.81 24.99-33.55 60.86-33.55 44.43 0 77.74 29.02 77.74 91.4V378z"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a
+                        target="_blank"
+                        href="https://github.com/IsaAgverdiev"
+                        class="contacts__link"
+                      >
+                        <svg width="45" height="45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M45 0H0v45h45V0ZM15.38 44.02c.3.06.54.05.74 0L28.8 44c.2.05.46.06.77 0h-.77c-.57-.14-.78-.63-.78-1.05v-1.22c.02-1.13.03-2.86.03-4.84 0-2.07-.73-3.42-1.52-4.09 5-.54 10.27-2.41 10.27-10.9 0-2.42-.88-4.4-2.31-5.94.22-.56.98-2.8-.23-5.85 0 0-1.88-.6-6.16 2.27-1.8-.5-3.7-.74-5.62-.75-1.91.01-3.82.26-5.63.75-4.3-2.86-6.18-2.27-6.18-2.27-1.21 3.04-.45 5.3-.2 5.85a8.45 8.45 0 0 0-2.32 5.93c0 8.48 5.26 10.38 10.25 10.93a4.68 4.68 0 0 0-1.42 2.96c-1.29.56-4.55 1.54-6.55-1.84 0 0-1.2-2.13-3.45-2.28 0 0-2.2-.03-.16 1.34 0 0 1.48.68 2.5 3.24 0 0 1.32 4.3 7.58 2.96l.02 2.58.01 1.18c0 .44-.22.92-.8 1.06h-.74Z"
+                            fill="#000"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="title title__h2 about__title">About me</h2>
+          <div class="about__text-wrap">
+            <p class="about__text">
+              I am Isa Agverdiev, a web developer, have been working in the field of frontend
+              development for about 6 months. I created design and wrote html code, worked with
+              Javascript libraries, and wrote my own scripts. You can see my projects on my github
+              account. Later, I actively began to study JS
+            </p>
+            <p class="about__text">
+              In search of teaching materials, I came across RsSchool, now I am a student at this
+              school and my immediate goal is to improve my skills and get a job at EPAM and become
+              a mentor of RsSchool. Level of English language a2
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="title title__h2">Skills</h2>
+          <div class="skills__lists">
+            <ul class="skills__list">
+              <li class="skills__item skills__item-html">HTML</li>
+              <li class="skills__item skills__item-css">CSS</li>
+              <li class="skills__item skills__item-js">JavaScript</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item skills__item-react">React.js</li>
+              <li class="skills__item skills__item-sass">Sass/Less</li>
+              <li class="skills__item skills__item-figma">Figma</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item skills__item-gulp">Gulp</li>
+              <li class="skills__item skills__item-webpack">Webpack</li>
+              <li class="skills__item skills__item-git">Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="code" id="code">
+        <div class="container">
+          <h1 class="title code__title">Sample code</h1>
+          <div class="code__wrap">
+            <pre>
+              <code class="language-javascript hljs">
+          var WordDictionary = function () {
+            this.arr = []
+          };
+          WordDictionary.prototype.addWord = function (word) {
+            this.arr.push(word)
+          };
+          WordDictionary.prototype.search = function (word) {
+              let reg = new RegExp(`^${word}$`)
+              return this.arr.find(v => reg.test(v)) !== undefined
+          };
+            </code>
+          </pre>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="container">
+          <h1 class="title education__title">Education</h1>
+          <ul class="education__list">
+            <li class="education__item">
+              <span class="education__item-date">09.2021</span>
+              <span
+                ><a target="_blank" href="https://rs.school/js/" class="education__item-name"
+                  >JS / Frontend
+                </a>
+              </span>
+              <span class="education__item-company">RsSchool</span>
+            </li>
+            <li class="education__item">
+              <span class="education__item-date">07.2021</span>
+              <span
+                ><a
+                  target="_blank"
+                  href="https://stepik.org/certificate/e97e29baced56a0f4f507b4e1b07a5019276a8e9.pdf"
+                  class="education__item-name"
+                  >JavaScript for beginners
+                </a>
+              </span>
+              <span class="education__item-company">Stepik</span>
+            </li>
+            <li class="education__item">
+              <span class="education__item-date">07.2021</span>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://stepik.org/certificate/1206c5bc0261fb8811a8241f6ab540038770d436.pdf"
+                  class="education__item-name"
+                  >Web Development for Beginners: HTML and CSS</a
+                >
+              </span>
+              <span class="education__item-company">Stepik</span>
+            </li>
+            <li class="education__item">
+              <span class="education__item-date">07.2021</span>
+              <span>
+                <a
+                  target="_blank"
+                  href="https://stepik.org/certificate/5230adc7e58107ac58fa51a60144886f7b374d06.pdf"
+                  class="education__item-name"
+                  >BASICS html, css</a
+                >
+              </span>
+              <span class="education__item-company">Stepik</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h1 class="title projects__title">Projects</h1>
+          <div class="projects__grid">
+            <div class="projects__item">
+              <div class="project__inner">
+                <h4 class="project__name">Desire</h4>
+                <p class="project__text">Multi-page website for designer furniture</p>
+                <p class="project__text">HTML, CSS, JS</p>
+              </div>
+              <button class="btn btn-project btn-project__more" data-name="Desire">see more</button>
+            </div>
+
+            <div class="projects__item">
+              <div class="project__inner">
+                <h4 class="project__name">MyOffice</h4>
+                <p class="project__text">
+                  Landing page for a company that leases and sells offices in the business center on
+                  Tulskaya
+                </p>
+                <p class="project__text">HTML, CSS, JS</p>
+              </div>
+              <button class="btn btn-project" data-name="MyOffice">see more</button>
+            </div>
+
+            <div class="projects__item">
+              <div class="project__inner">
+                <h4 class="project__name">Shirogo</h4>
+                <p class="project__text">
+                  Multi-page site for streamers on Twitch for introducing event statistics and
+                  information on streams.
+                </p>
+                <p class="project__text">HTML, CSS, JS</p>
+              </div>
+              <button class="btn btn-project" data-name="Shirogo">see more</button>
+            </div>
+
+            <div class="projects__item">
+              <div class="project__inner">
+                <h4 class="project__name">PureBank</h4>
+                <p class="project__text">Bank landing page, for the sale of a debit card</p>
+                <p class="project__text">HTML, CSS, JS</p>
+              </div>
+              <button class="btn btn-project" data-name="PureBank">see more</button>
+            </div>
+
+            <div class="projects__item">
+              <div class="project__inner">
+                <h4 class="project__name">Search app</h4>
+                <p class="project__text">learning the basics of react</p>
+                <p class="project__text">React, Axios</p>
+              </div>
+              <button class="btn btn-project" data-name="React">see more</button>
+            </div>
+
+            <div class="projects__item projects__item-more">
+              <div class="project__inner">
+                <a target="_blank" href="https://github.com/IsaAgverdiev" class="project__link-more"
+                  ><span>see more on github</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item footer__item-gh">
+              <a href="https://github.com/IsaAgverdiev" class="footer__link">
+                <svg
+                  width="75"
+                  height="72"
+                  viewBox="0 0 75 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.5 0C16.7812 0 0 16.5 0 36.85C0 53.1344 10.7437 66.9438 25.6406 71.8125C27.5156 72.1594 28.2031 71.0188 28.2031 70.0406C28.2031 69.1656 28.1719 66.8469 28.1563 63.775C17.725 65.9969 15.525 58.8313 15.525 58.8313C13.8187 54.5781 11.3531 53.4406 11.3531 53.4406C7.95625 51.1563 11.6156 51.2031 11.6156 51.2031C15.3813 51.4594 17.3594 55 17.3594 55C20.7031 60.6344 26.1375 59.0063 28.2813 58.0656C28.6188 55.6813 29.5844 54.0594 30.6563 53.1375C22.3281 52.2156 13.575 49.0469 13.575 34.9281C13.575 30.9063 15.0281 27.6188 17.4344 25.0406C17.0125 24.1094 15.7469 20.3625 17.7625 15.2875C17.7625 15.2875 20.9031 14.3 28.075 19.0656C31.075 18.2469 34.2625 17.8406 37.45 17.8219C40.6375 17.8406 43.825 18.2469 46.825 19.0656C53.95 14.3 57.0906 15.2875 57.0906 15.2875C59.1062 20.3625 57.8406 24.1094 57.4656 25.0406C59.8562 27.6188 61.3094 30.9063 61.3094 34.9281C61.3094 49.0844 52.5438 52.2 44.2 53.1063C45.5125 54.2125 46.7313 56.4719 46.7313 59.925C46.7313 64.8563 46.6844 68.8188 46.6844 70.0156C46.6844 70.9813 47.3406 72.1344 49.2625 71.7656C64.2656 66.9281 75 53.1094 75 36.85C75 16.5 58.2094 0 37.5 0V0Z"
+                    fill="#1D1D1D"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item"><p class="footer__text">2021</p></li>
+            <li class="footer__item footer__item-rs">
+              <a href="https://rs.school/js/" class="footer__link footer__link-rs"
+                ><img class="footer__img-rs" src="./images/logo-rs.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="project-modal">
+      <div class="project-modal__body">
+        <div class="project-modal__inner"></div>
+        <button class="project-modal__btn">&#215;</button>
+      </div>
+    </div>
+    <div class="overlay-menu"></div>
+  </body>
+</html>
